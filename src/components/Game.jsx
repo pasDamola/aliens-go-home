@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
+import Canvas from "./Canvas";
 
 function Game() {
   const message = useSelector((state) => state.message);
 
-  return <h1>{message}</h1>;
+  return <Canvas />;
 }
 
 export default Game;
