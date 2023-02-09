@@ -1,12 +1,10 @@
-import { useSelector } from "react-redux";
+import Game from "./components/Game";
 import "./App.css";
 
 function App() {
-  const message = useSelector((state) => state.message);
-
   return (
     <div className="App">
-      <h1>{message}</h1>
+      <Game />
     </div>
   );
 }
